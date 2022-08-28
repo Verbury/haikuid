@@ -6,19 +6,35 @@ class HaikuIDTest(unittest.TestCase):
     def setUp(self) -> None:
         return super().setUp()
 
+    def test_not_none(self):
+        """
+        Assert an ID is generated
+        """
+        client = HaikuID()
+        id = client.generate()
+        self.assertIsNotNone(id)
+
     def test_sequence_unique(self):
-        haikuID = HaikuID()
+        """
+        Assert a sequence of 3 generated are 
+        all unique
+        """
+        client = HaikuID()
         self.assertNotEqual(
-            haikuID.generate(),
-            haikuID.generate(),
-            haikuID.generate()
+            client.generate(),
+            client.generate(),
+            client.generate()
         )
 
-    def test_return_not_none(self):
-        haikuID = HaikuID()
-        id = haikuID.generate()
-        print(id)
-        self.assertIsNotNone(id)
+    def test_generate_many(self):
+        """
+        A vanity test to 'see' a variety of 
+        IDs being generated
+        """
+        client = HaikuID()
+        for _ in range(10):
+            id = client.generate()
+            print(id)
 
 
 if __name__ == '__main__':
