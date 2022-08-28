@@ -16,14 +16,14 @@ class HaikuIDTest(unittest.TestCase):
 
     def test_sequence_unique(self):
         """
-        Assert a sequence of 3 generated are 
+        Assert a generated sequence are 
         all unique
         """
         client = HaikuID()
         self.assertNotEqual(
             client.generate(),
             client.generate(),
-            client.generate()
+            client.generate(),
         )
 
     def test_generate_many(self):
