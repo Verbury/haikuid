@@ -6,6 +6,16 @@ Substantionaly based on [Haikunator](https://github.com/usmanbashir/haikunator) 
 
 HaikuID provides a larger adjective and noun namespace, and a fixed 7 digit hexedecimal token.
 
+## Usage
+
+```python
+from haikuid import HaikuID
+
+haikuid = HaikuID()
+
+id = haikuid.generate()
+```
+
 ## Language Ports
 
 Haikunator has also been ported to other languages. Though, these projects are not

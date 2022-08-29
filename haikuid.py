@@ -51,12 +51,6 @@ class HaikuID:
 
     _delimiter = "-"
 
-    def __init__(self):
-        """
-        Initialise new HaikuID
-        """
-        pass
-
     def generate(self):
         """
         Generate heroku like friendly ids

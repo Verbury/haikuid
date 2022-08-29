@@ -10,8 +10,8 @@ class HaikuIDTest(unittest.TestCase):
         """
         Assert an ID is generated
         """
-        client = HaikuID()
-        id = client.generate()
+        haikuid = HaikuID()
+        id = haikuid.generate()
         self.assertIsNotNone(id)
 
     def test_sequence_unique(self):
@@ -19,21 +19,21 @@ class HaikuIDTest(unittest.TestCase):
         Assert a generated sequence are 
         all unique
         """
-        client = HaikuID()
+        haikuid = HaikuID()
         self.assertNotEqual(
-            client.generate(),
-            client.generate(),
-            client.generate(),
+            haikuid.generate(),
+            haikuid.generate(),
+            haikuid.generate(),
         )
 
     def test_generate_many(self):
         """
-        A vanity test to 'see' a variety of 
+        Vanity test to 'see' a variety of 
         IDs being generated
         """
-        client = HaikuID()
+        haikuid = HaikuID()
         for _ in range(10):
-            id = client.generate()
+            id = haikuid.generate()
             print(id)
 
 
