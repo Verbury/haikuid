@@ -18,8 +18,7 @@ id = haikuid.generate()
 
 ## Language Ports
 
-Haikunator has also been ported to other languages. Though, these projects are not
-affiliated with or endorsed by me, but check them out:
+Haikunator has also been ported to other languages.
 
 - Go:
   - [Go-Haikunator](https://github.com/yelinaung/go-haikunator)
