@@ -2,7 +2,7 @@
 
 An opinionated python generator of Heroku like readable IDs.
 
-Substantionaly based on [Haikunator](https://github.com/usmanbashir/haikunator) and [HaikunatorPY](https://github.com/Atrox/haikunatorpy)
+Substantially based on [Haikunator](https://github.com/usmanbashir/haikunator) and [HaikunatorPY](https://github.com/Atrox/haikunatorpy)
 
 HaikuID provides a larger adjective and noun namespace, and a fixed 7 digit hexedecimal token.
 
