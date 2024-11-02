@@ -1,6 +1,5 @@
 from secrets import randbelow
 
-
 class HaikuID:
     _adjectives = [
         'aged', 'ancient', 'assorted', 'autumn', 'besmirched', 'billowing',
